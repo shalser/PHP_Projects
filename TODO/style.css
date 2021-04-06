@@ -1,0 +1,305 @@
+* {
+  font-family: Roboto;
+}
+
+.wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap .container h1 {
+  text-transform: uppercase;
+}
+
+.wrap .container .add-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .container .add-form button.add-todo {
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  border: none;
+  background-color: lightgreen;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrap .container .add-form button:hover {
+  background-color: blue;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+}
+
+.wrap .container .add-form button:hover :active {
+  outline: none;
+}
+
+.wrap .container .add-form button:hover :focus {
+  outline: none;
+}
+
+.wrap .container .up-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 25px;
+  margin-top: 30px;
+  width: 720px;
+}
+
+.wrap .container .line {
+  border-bottom: solid 2px black;
+  width: 600px;
+}
+
+.wrap .container main {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.wrap .container main .main-title {
+  width: 300px;
+}
+
+.wrap .container main button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrap .container main button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrap .container main .btn-show:hover {
+  background-color: yellow;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+}
+
+.wrap .container main .btn-show:active {
+  outline: none;
+}
+
+.wrap .container main .btn-show:focus {
+  outline: none;
+}
+
+.wrap .container main .btn-edit:hover {
+  background-color: blue;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.wrap .container main .btn-edit:active {
+  outline: none;
+}
+
+.wrap .container main .btn-edit:focus {
+  outline: none;
+}
+
+.wrap .container main .btn-delete:hover {
+  background-color: red;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.wrap .container main .btn-delete:active {
+  outline: none;
+}
+
+.wrap .container main .btn-delete:focus {
+  outline: none;
+}
+
+.add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
+.add-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add-form .add-title {
+  width: 400px;
+  height: 30px;
+  border: 2px solid grey;
+  font-size: 20px;
+}
+
+.add-form .add-title:hover {
+  outline: none;
+}
+
+.add-form .add-title:focus {
+  outline: none;
+}
+
+.add-form .add-text {
+  border: 2px solid grey;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.add-form .add-text:hover {
+  outline: none;
+}
+
+.add-form .add-text:focus {
+  outline: none;
+}
+
+.add-form .btn-add {
+  width: 50px;
+  background-color: lightgreen;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 10px;
+}
+
+.add-form .btn-add:focus {
+  outline: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
+.show-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.show-form .show-title {
+  width: 400px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.show-form .show-text {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.show-form .btn-home {
+  width: 50px;
+  background-color: lightgreen;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 10px;
+}
+
+.show-form .btn-home:hover {
+  outline: none;
+  background-color: blue;
+  color: #fff;
+}
+
+.show-form .btn-home:focus {
+  outline: none;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .up-title {
+    width: 440px !important;
+  }
+  .line {
+    width: 410px !important;
+  }
+  main {
+    width: 440px !important;
+  }
+  .main-title {
+    width: 240px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .up-title {
+    width: 320px !important;
+  }
+  .line {
+    width: 300px !important;
+  }
+  main {
+    width: 340px !important;
+  }
+  .main-title {
+    width: 150px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

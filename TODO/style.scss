@@ -1,0 +1,233 @@
+* {
+    font-family: Roboto;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        // width: 1000px;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            text-transform: uppercase;
+        }  
+        .add-form {
+            display: flex;
+            button.add-todo {
+                width: 50px;
+                height: 30px;
+                font-size: 20px;
+                border: none;
+                background-color: lightgreen;
+                border-radius: 5px;
+                cursor: pointer;
+                outline:none;
+                transition: 0.3s;
+            }  button:hover {
+                   background-color: blue;
+                   color:#fff;
+                   transition: 0.3s;
+                   outline:none;
+                :active {
+                    outline:none;
+                }   
+                :focus {
+                    outline:none;
+                }
+            }
+        }
+        .up-title {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 25px;
+            margin-top: 30px;
+            width: 720px;
+        } 
+        .line {
+            border-bottom: solid 2px black;
+            width: 600px;
+        }
+        main {
+            width: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
+            .main-title {
+                width: 300px;
+            }
+            button {
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover {
+                    transition: 0.3s;
+                }
+            } 
+            .btn-show {
+                &:hover {
+                    background-color: yellow;
+                    color: #000000;
+                    transition: 0.3s;
+                    outline: none;    
+                }
+                &:active {
+                    outline: none;    
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            
+            .btn-edit {
+                &:hover {
+                background-color: blue;
+                color: #000000;
+                transition: 0.3s;
+                color: #fff;
+                }
+                &:active {
+                    outline: none;    
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            .btn-delete {
+                &:hover {
+                background-color: red;
+                color: #000000;
+                transition: 0.3s;
+                color: #fff;
+                }
+                &:active {
+                    outline: none;    
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    } 
+}
+
+// add
+
+.add {
+    display: flex;
+    justify-content: flex-start!important;
+}
+.add-form {
+    display: flex;
+    flex-direction: column;
+    .add-title {
+        width: 400px;
+        height: 30px;
+        border: 2px solid grey;
+        font-size: 20px;
+        &:hover {
+            outline: none;
+        } 
+        &:focus {
+            outline: none;
+        }
+    }
+    .add-text {
+        border: 2px solid grey;
+        margin-top: 10px;
+        font-size: 20px;
+        &:hover {
+            outline: none;
+        } 
+        &:focus {
+            outline: none;
+        }
+    }   
+    .btn-add {
+        width: 50px;
+        background-color: lightgreen;
+        align-self: flex-end;
+        margin-top: 10px;
+        &:focus {
+            outline: none;
+    }
+    }   
+}
+
+// show
+
+
+.show {
+    display: flex;
+    justify-content: flex-start!important;
+}
+
+.show-form {
+    display: flex;
+    flex-direction: column;
+    .show-title {
+        width: 400px;
+        height: 30px;
+        font-size: 20px;
+        
+    }
+    .show-text {
+        margin-top: 10px;
+        font-size: 20px;
+    }   
+    .btn-home {
+        width: 50px;
+        background-color: lightgreen;
+        align-self: flex-end;
+        margin-top: 10px;
+        &:hover {
+            outline: none;
+            background-color: blue;
+            color: #fff;
+        } 
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+// Media
+
+@media (max-width: 1000px) {
+    .container {
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .up-title {
+        width: 440px!important;
+    }
+    .line {
+        width: 410px!important;
+    }
+    main {
+        width: 440px!important;
+    }
+    .main-title {
+        width: 240px!important;
+    }
+}
+
+@media (max-width: 375px) {
+    .up-title {
+        width: 320px!important;
+    }
+    .line {
+        width: 300px!important;
+    }
+    main {
+        width: 340px!important;
+    }
+    .main-title {
+        width: 150px!important;
+    }
+}
