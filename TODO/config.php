@@ -1,27 +1,30 @@
 <?php
 
+use JetBrains\PhpStorm\NoReturn;
+
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 ini_set('error_reporting', E_ALL);
 
 
-define('HOST', 'localhost');
-define('DBNAME', 'todo');
-define('USER', 'root');
-define('PASS', '');
+const HOST = 'localhost';
+const DBNAME = 'todo';
+const USER = 'root';
+const PASS = '';
 
 
 
-function getAllTODO() {
+function getAllTODO(): bool|array
+{
     $db = new PDO('mysql:host='.HOST.';dbname='.DBNAME,USER,PASS);
     $sql = "SELECT * FROM info";
     $statement = $db->prepare($sql);
     $statement -> execute();
-    $info = $statement->fetchAll(PDO::FETCH_ASSOC);
-    return $info;
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function addTODO($data) {
+#[NoReturn] function addTODO($data): void
+{
     $db = new PDO('mysql:host='.HOST.';dbname='.DBNAME, USER, PASS);
     $sql = "INSERT INTO info (title, text) VALUES (:title, :text)";
     $statement = $db->prepare($sql);
@@ -47,7 +50,8 @@ function showTODO($id) {
     return $info;
 }
 
-function deleteTODO($id) {
+#[NoReturn] function deleteTODO($id): void
+{
 
     $db = new PDO('mysql:host='.HOST.';dbname='.DBNAME, USER,PASS);
     $sql = "DELETE FROM info WHERE id=:id";
@@ -60,7 +64,8 @@ function deleteTODO($id) {
     exit();
 }
 
-function updateTODO($data) {
+#[NoReturn] function updateTODO($data): void
+{
     $db = new PDO('mysql:host='.HOST.';dbname='.DBNAME, USER, PASS);
     $sql = "UPDATE info SET title=:title, text=:text WHERE id=:id";
     $statement = $db->prepare($sql);

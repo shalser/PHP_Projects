@@ -17,8 +17,12 @@
             <main class="add">
                 <div class="main-action">
                     <form action="add-action.php" method="POST" class="add-form">
-                        <input type="text" name="title" class="add-title" placeholder="title">
-                        <textarea class="add-text" name="text" cols="30" rows="10" placeholder="text"></textarea>
+                        <label>
+                            <input type="text" name="title" class="add-title" placeholder="title">
+                        </label>
+                        <label>
+                            <textarea class="add-text" name="text" cols="30" rows="10" placeholder="text"></textarea>
+                        </label>
                         <button type="submit" class="btn-add">Add</button>
                     </form>
                 </div>
